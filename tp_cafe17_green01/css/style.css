@@ -316,7 +316,7 @@ ul.icon img:hover {
 .list {
 	width: 49%;				/*ボックスの幅*/
 	margin-right: 2%;		/*ボックス同士の左右間の余白。ボックスを２列並べるので、49%×2個=98%。100%との差の2%がここに入ります。*/
-	margin-bottom: 15px;	/*ボックス同士の上下間の余白*/
+	margin-bottom: 50px;	/*ボックス同士の上下間の余白*/
 	text-align: center;		/*テキストをセンタリング*/
 	font-size: 0.7rem;		/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
 }
@@ -393,6 +393,70 @@ ul.icon img:hover {
 	display: block;
 	font-size: 0.7rem;	/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
 	opacity: 0.7;		/*透明度。0.7は色が70%出た状態の事。*/
+}
+
+
+/*写真とメニュー解説テキストを囲むブロック*/
+.list3 {
+	display: flex;			/*flexボックスを使う指定*/
+	flex-direction: row;	/*子要素を縦並びにする*/
+	align-items: center;	/*垂直揃えの指定。上下中央に配置されるように。*/
+	justify-content: center;	/*並びかたの種類の指定*/
+	margin-bottom: 50px;	/*下に空けるスペース*/
+}
+
+/*list2ブロック内のh4タグ*/
+.list3 h4 {
+	margin: 0;
+	font-size: 1.2rem;		/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
+	font-weight: normal;	/*hタグはデフォルトで太字なので、これを標準にする*/
+	text-align: center;		/*テキストをセンタリング*/
+}
+
+/*写真下の小さなテキスト*/
+.list3 figcaption {
+	margin-top: 20px;	/*写真とテキストとの間に空けるスペース*/
+	font-size: 0.7rem;	/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
+}
+
+/*list2ブロック内のfigureタグ。写真を囲むブロック。*/
+.list3 figure {
+	width: 90%;				/*幅*/
+	text-align: center;		/*テキストをセンタリング*/
+}
+
+/*料理写真*/
+.list3 figure img {
+	padding: 10px;		/*写真の周りに少し余白を作って、より写真っぽく見せる*/
+	background: #fff;	/*上の10pxとの間に出る色*/
+	box-shadow: 0px 0px 50px 10px rgba(255,255,255,0.4);	/*ボックスの影。右へ、下へ、ぼかし幅、範囲。255,255,255は白の事で0.4は色が40%出た状態の事。*/
+	/*左に少しだけ回転させる指定。回転させたくなければこの１行と、下の「.list2:nth-of-type(even) img」のブロックを削除。*/
+}
+
+
+
+/*list2内のtextブロック*/
+.list3 .text {
+	width: 100%;	/*幅*/
+}
+
+/*list2内のリストタグ*/
+.list3 li {
+	display: block;
+	margin-bottom: 10px;
+	text-align: center;	/*上下間にとるスペース*/
+}
+
+/*list2内のリストタグ内のspanタグ。文字サイズの小さい説明テキスト部分です。*/
+.list3 li span {
+	display: block;
+	font-size: 0.7rem;	/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
+	opacity: 0.7;		/*透明度。0.7は色が70%出た状態の事。*/
+}
+
+.list3 p {
+	margin: 0!important;	/*「main p」のマージンをリセットする*/
+	text-align: center;
 }
 
 /*menu.htmlのテキストメニュー設定
