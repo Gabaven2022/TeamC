@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="ここにサイト説明を入れます">
 <link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/lightbox.min.css">
 </head>
 
 <body>
@@ -48,7 +50,11 @@
         <div class="list-container up">
 
             <div class="list">
-            <figure><img src="images/sample1.jpg" alt=""></figure>
+            <figure><a href="images/sample1.jpg" data-lightbox="meet1"><img src="images/sample1.jpg"></a>
+                <a href="images/sample1.jpg" data-lightbox="meet1"></a>
+                <a href="images/sample1.jpg" data-lightbox="meet1"></a>
+            </figure>
+            
             <h4>メニュータイトル</h4>
             <p>1,000yen</p>
             </div>
@@ -200,5 +206,7 @@
 
 <!--ページの上部へ戻るボタン-->
 <p class="pagetop"><a href="#">↑</a></p>
+
+<script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
