@@ -274,6 +274,7 @@ ul.icon img:hover {
 .pickup .list img {
 	object-fit: cover;	/*トリミングのタイプ*/
 	width: 100%;		/*画像の幅*/
+	height: 200px;
 	font-family: 'object-fit: cover;';	/*IE対策*/
 }
 
@@ -336,6 +337,11 @@ ul.icon img:hover {
 .list p {
 	margin: 0!important;	/*「main p」のマージンをリセットする*/
 }
+
+.list img {
+	height: 250px;
+}
+
 
 /*トップページの「今週のランチ」ブロック
 ---------------------------------------------------------------------------*/
